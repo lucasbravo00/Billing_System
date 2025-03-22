@@ -4,65 +4,93 @@ A comprehensive restaurant billing and management system developed in Python usi
 
 ## Overview
 
-This application provides a complete solution for restaurant order management and billing. It allows staff to select food items, drinks, and desserts, calculate costs including taxes, and generate detailed receipts that can be saved for record-keeping.
+This application provides a complete solution for restaurant order management and billing. It allows staff to select food items, drinks, and desserts; calculate costs (including configurable tax rates); and generate detailed receipts that can be saved for record-keeping.
 
 ## Features
 
-- **Product Selection**: Easy-to-use checkboxes for selecting food items, drinks, and desserts
-- **Quantity Management**: Input fields for specifying the quantity of each selected item
-- **Automatic Calculations**: Real-time calculation of costs, subtotals, taxes, and final totals
-- **Receipt Generation**: Detailed receipts including order details and timestamps
-- **Receipt Storage**: Save receipts as text files for record-keeping
-- **Built-in Calculator**: Convenient calculator for additional calculations
-- **User-friendly Interface**: Clean, intuitive interface organized into logical sections
+- **Product Selection:** Checkboxes for choosing food items, drinks, and desserts
+- **Quantity Management:** Input fields for specifying quantities
+- **Automatic Calculations:** Real-time subtotal, tax, and total calculations
+- **Receipt Generation:** Detailed receipt with order breakdown and timestamp
+- **Receipt Storage:** Save receipts as plain-text files
+- **Built-in Calculator:** Quick calculator for additional needs
+- **Reset Function:** Clear all inputs with a single click
+- **User-friendly Interface:** Clean, intuitive layout
 
 ## Technical Details
 
-- **Language**: Python
-- **GUI Framework**: Tkinter
-- **Additional Libraries**: Random (for receipt numbers), Datetime (for timestamps)
-- **Tax Rate**: Configurable (default 21%)
-- **Product Database**: Easily modifiable product lists and prices
+- **Language:** Python 3.x
+- **GUI Framework:** Tkinter
+- **Dependencies:**
+  - `random` (receipt numbers)
+  - `datetime` (timestamps)
+- **Tax Rate:** Configurable (default 21%)
+- **Product Database:** Easily customizable lists of items and prices
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/restaurant-billing-system.git
+   cd restaurant-billing-system
+   ```
+
+2. (Optional) Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate        # Windows: venv\Scripts\activate
+   ```
+
+3. Install dependencies (Tkinter is included with most Python installations):
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Running the Application
+
+From the project's root directory, run:
+```bash
+python Billing_System.py
+```
+
+Or, if your system uses Python3:
+```bash
+python3 Billing_System.py
+```
+
+The graphical interface will launch immediately—no additional arguments required.
 
 ## How to Use
 
-1. **Select Products**: Check the boxes next to the desired food items, drinks, or desserts
-2. **Enter Quantities**: Enter the quantity for each selected item
-3. **Calculate Total**: Click the "Total" button to calculate costs
-4. **Generate Receipt**: Click the "Receipt" button to create a detailed receipt
-5. **Save Receipt**: Click the "Save" button to save the receipt as a text file
-6. **Reset System**: Click the "Reset" button to clear all selections and start over
+1. **Select Products:** Tick the boxes next to desired items
+2. **Enter Quantities:** Specify quantity for each selection
+3. **Calculate Total:** Click Total to compute costs
+4. **Generate Receipt:** Click Receipt to view order summary
+5. **Save Receipt:** Click Save to write receipt to a text file
+6. **Reset:** Click Reset to clear all inputs
 
 ## System Requirements
 
-- Python 3.x
-- Tkinter library (usually included with Python)
-- Minimal system resources (runs on most computers)
-
-## Implementation Notes
-
-The system is designed with modularity in mind, separating functionality into distinct components:
-- Product selection and quantity input
-- Cost calculation logic
-- Receipt generation and formatting
-- Calculator functionality
-- File handling for receipt storage
+- Python 3.6+
+- Tkinter (bundled with Python)
+- Minimal CPU/memory — runs on virtually any desktop or laptop
 
 ## Customization
 
-You can easily customize this system by modifying:
-- Product lists (foods, drinks, desserts)
-- Price lists
-- Tax rates
-- UI elements and layout
-- Receipt format
+- Modify product lists and prices in the source
+- Adjust tax rate via the TAX_RATE constant
+- Change receipt formatting in the receipt generation function
+- Update UI labels, fonts, and colors in Tkinter widget definitions
 
 ## Future Enhancements
 
-Potential improvements for future versions:
-- Database integration for product management
-- User authentication system
-- Sales reporting and analytics
+- Database integration for dynamic menu management
+- User authentication with role-based access
+- Sales reporting dashboard
 - Inventory tracking
-- Table management functionality
-- Payment processing integration
+- Table and reservation management
+- Payment gateway integration
+
+## License
+
+This project is licensed under the MIT License — see the LICENSE file for details.
