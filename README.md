@@ -87,4 +87,4 @@ The graphical interface will launch immediately—no additional arguments requir
 
 ## License
 
-This project is licensed under the MIT License — see the LICENSE file for details.
+Feel free to use, modify, and distribute this code for personal or educational purposes.
