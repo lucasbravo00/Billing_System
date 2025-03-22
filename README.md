@@ -52,12 +52,6 @@ From the project's root directory, run:
 ```bash
 python Billing_System.py
 ```
-
-Or, if your system uses Python3:
-```bash
-python3 Billing_System.py
-```
-
 The graphical interface will launch immediately—no additional arguments required.
 
 ## How to Use
