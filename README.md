@@ -41,11 +41,6 @@ This application provides a complete solution for restaurant order management an
    source venv/bin/activate        # Windows: venv\Scripts\activate
    ```
 
-3. Install dependencies (Tkinter is included with most Python installations):
-   ```bash
-   pip install -r requirements.txt
-   ```
-
 ## Running the Application
 
 From the project's root directory, run:
