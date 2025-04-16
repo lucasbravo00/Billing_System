@@ -45,7 +45,7 @@ This application provides a complete solution for restaurant order management an
 
 From the project's root directory, run:
 ```bash
-python Billing_System.py
+python Billing_system.py
 ```
 The graphical interface will launch immediately—no additional arguments required.
 
