@@ -31,8 +31,8 @@ This application provides a complete solution for restaurant order management an
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/restaurant-billing-system.git
-   cd restaurant-billing-system
+   git clone https://github.com/lucasbravo00/Billing_System.git
+   cd Billing_System
    ```
 
 2. (Optional) Create and activate a virtual environment:
